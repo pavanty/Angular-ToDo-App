@@ -1,0 +1,111 @@
+h3 {
+  text-align: center;
+  font-family: cursive;
+  margin-top: 30px;
+  position: static;
+}
+
+.main-box {
+  width: 40%;
+  top: 25%;
+  left: 30%;
+border-radius: 20px;
+min-width: 500px;
+ position: absolute;
+  min-height: 100px;
+  font-weight: bold;
+}
+.main-header {
+  position: absolute;
+  border: 1px solid blue;
+}
+.container-main {
+  position: relative;
+  padding: 30px 20px;
+  border: 1px solid black;
+  display: contents;
+}
+.container {
+  border: 1px solid black;
+  width: fit-content;
+}
+.task {
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+}
+main-box {
+  border: 1px solid black;
+}
+.green {
+  background-color: aliceblue;
+  text-decoration-line: line-through;
+}
+input {
+  padding: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+body {
+  background-color: red;
+}
+.submitbutton {
+  background-color: rgb(248, 180, 52);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: black;
+}
+.deletebutton {
+  background-color: rgb(255, 55, 55);
+  margin-top: 5px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.editbutton {
+  background-color: rgb(19, 188, 19);
+  padding: 10px;
+  border-radius: 10px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.mains {
+  background-color: aqua;
+  height: 100%;
+}
+
+.todomain {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .main-box {
+    top: 10%;
+    left: 15%;
+    right: 5%;
+position: static;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="updatedetails">
+  <h3>Update ToDo-List</h3>
+  <h4>{{ stringobj?.date | date }}</h4>
+  <form (ngSubmit)="onsubmit()">
+    <div class="formGroup">
+      <input class="form-control" type="text" [(ngModel)]="stringobj.title" name="title" />
+      <small *ngIf="stringobj.title?.length == 0" class="text-danger">Please fill the field</small>
+    </div>
+
+    <button [disabled]="stringobj.title?.length == 0" type="submit">
+      submit
+    </button>
+  </form>
+</div>

@@ -1,0 +1,66 @@
+<div class="bodytag">
+  <h3>TODO-APP</h3>
+  <div class="main-box">
+    <div class="container-main">
+      <form [formGroup]="todopost" (ngSubmit)="submitform()">
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="title"
+            required
+          />
+          <small *ngIf="title?.invalid && title?.touched" class="text-danger"
+            >Please fill the field</small
+          >
+        </div>
+        <button
+          [disabled]="todopost.invalid"
+          class="submitbutton"
+          type="submit"
+        >
+          &#43;
+        </button>
+      </form>
+    </div>
+
+    <div
+      class="container"
+      [class.green]="tododata?.ischecked"
+      *ngFor="let tododata of tododatas"
+    >
+      <div class="todomain">
+        <div class="todo" (click)="checkcompleted(tododata)">
+          <table class="task">
+            <div>
+              <td class="datestyle">{{ tododata.date | date }}</td>
+              <td
+                style="
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 30ch;
+                  width: 20ch;
+                  text-align: center;
+                "
+              >
+                {{ tododata.title }}
+              </td>
+
+              <td>
+                <a class="editbutton" (click)="gotoeditcomponent(tododata.id)"
+                  >Edit</a
+                >
+              </td>
+            </div>
+          </table>
+        </div>
+        <div>
+          <button class="deletebutton" (click)="deletebyid(tododata.id)">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

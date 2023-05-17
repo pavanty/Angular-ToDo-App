@@ -1,0 +1,38 @@
+.updatedetails {
+  top: 10%;
+  width: 40%;
+  text-align: center;
+  left: 30%;
+  border-radius: 10px;
+  position: absolute;
+  min-height: 100px;
+}
+
+input {
+  padding: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: rgb(135, 135, 197);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+small {
+  font-weight: bold;
+}
+
+h4,
+h3 {
+  margin-top: 40px;
+  font-family: cursive;
+}
